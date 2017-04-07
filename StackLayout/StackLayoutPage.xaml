@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage 
+	xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	xmlns:local="clr-namespace:StackLayout" 
+	x:Class="StackLayout.StackLayoutPage">
+<!--	Padding="0,20,0,0">-->
+
+	<!--<StackLayout VerticalOptions="Center" Orientation="Horizontal">
+		<StackLayout Orientation="Vertical">
+			<Label Text="label1"/>
+			<Label Text="label2"/>
+		</StackLayout>
+		<Label Text="label3"/>
+		<Label Text="label4"/>
+	</StackLayout>-->
+	
+<!--	BackgroundColor="#FFBB66">-->
+<!--	<Label Text="Welcome to Xamarin Forms!" VerticalOptions="Center" HorizontalOptions="Center" />-->
+	<!--<StackLayout VerticalOptions="Center" Spacing="20">
+		<Label HorizontalOptions="Center" Text="Welcome To Ming Studio" TextColor="White"/>
+		<Label HorizontalOptions="Center" Text="我是Ming Lin" TextColor="White" FontSize="12"/>
+		<Button Text="登入" TextColor="White" BackgroundColor="#FFDDAA" FontAttributes="Bold"/>
+		<Button Text="註冊" TextColor="White" BackgroundColor="#FFDDAA" FontAttributes="Bold"/>
+	</StackLayout>-->
+
+	<!--	泛型 x:TypeArguments="Thickness"-->
+	<ContentPage.Padding>
+		<OnPlatform x:TypeArguments="Thickness" 
+			iOS="0, 20, 0, 0" 
+			Android = "0"></OnPlatform>
+	</ContentPage.Padding>
+
+	<StackLayout>
+		<Label Text="貓塔當生日禮物 喵喵超興奮！" />
+		<Image 
+			Source="http://twimg.edgesuite.net/images/ReNews/20170307/640_47205a581a179bf65f7bdc919e254b67.jpg"
+			Aspect="AspectFill"/>
+		<StackLayout Orientation="Horizontal">
+			<Button Text="讚" />
+			<Button Text="留言" />
+			<Button Text="分享" />
+		</StackLayout>
+		<BoxView HeightRequest="1" BackgroundColor="Gray" />
+		<Label Text="700個讚" FontAttributes="Bold" />
+		<Label Text="IG帳號pugandcat 時常分享法鬥Bandito和貓咪Luigi的生活照，目前已超過8萬人追蹤，3/4是Luigi的兩歲生日，飼主準備一份超大禮物放在牆角，還用紅布蓋住相當隆重，布幕一掀開竟然是貓塔，讓Luigi興奮得爬上去玩耍。(賴俊佑／綜合報導)" />
+	</StackLayout>
+	
+</ContentPage>
